@@ -1,9 +1,5 @@
 package core.mate.academy.model;
 
-/**
- * Add some custom fields that could be only in Truck
- * Do not remove no-field constructor
- */
 public class Truck extends Machine {
     private int maxCapacity;
 
@@ -14,5 +10,13 @@ public class Truck extends Machine {
     @Override
     public void doWork() {
         System.out.println("Truck started to work");
+    }
+
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
+
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
     }
 }
