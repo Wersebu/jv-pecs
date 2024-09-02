@@ -4,7 +4,11 @@ public class Truck extends Machine {
     private int maxCapacity;
 
     public Truck() {
-        this.maxCapacity = 5000;
+    }
+
+    public Truck(String name, String color, Integer maxCapacity) {
+        super(name, color);
+        this.maxCapacity = maxCapacity;
     }
 
     @Override

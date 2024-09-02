@@ -4,7 +4,12 @@ public class Excavator extends Machine {
     private int shovelSize;
 
     public Excavator() {
-        this.shovelSize = 10;
+
+    }
+
+    public Excavator(String name, String color, Integer shovelSize) {
+        super(name, color);
+        this.shovelSize = shovelSize;
     }
 
     @Override

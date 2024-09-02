@@ -4,7 +4,11 @@ public class Bulldozer extends Machine {
     private int fuelConsuptionPerHour;
 
     public Bulldozer() {
-        this.fuelConsuptionPerHour = 40;
+    }
+
+    public Bulldozer(String name, String color, Integer fuelConsuptionPerHour) {
+        super(name, color);
+        this.fuelConsuptionPerHour = fuelConsuptionPerHour;
     }
 
     @Override
